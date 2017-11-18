@@ -1,0 +1,150 @@
+<!DOCTYPE htlm>
+<html>
+
+<head>
+    <title>نتایج آزمون</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+    <!-- Header with title -->
+
+    <head>
+        <nav>
+            <div class="nav-wrapper navMenu">
+                <a href="#!" class="brand-logo center">نتایج آزمون</a>
+            </div>
+        </nav>
+    </head>
+
+    <article>
+        <div class="container">
+            <div class="row">
+                <!-- Inputs Div -->
+                <div class="col m3 s12">
+                    <div class="card">
+                        <div class="container">
+                            <input class="name" placeholder="نام دانش آموز" />
+                        </div>
+                        <div class="container">
+                            <input class="lesson" placeholder="نام درس" />
+                        </div>
+                        <div class="container">
+                            <input class="all" placeholder="تعداد کل سوالات" />
+                        </div>
+                        <div class="container">
+                            <input class="correct" placeholder="تعداد پاسخ های درست" />
+                        </div>
+                        <div class="container">
+                            <input class="wrong" placeholder="تعداد پاسخ های نادرست" />
+                        </div>
+                        <div class="container center-align" style="padding-bottom:7px">
+                            <a class="btn submit">محاسبه عملکرد</a>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Table Div -->
+                <div class="col m9 s12">
+                    <div class="card">
+                        <div class="container">
+                            <table id="myTable" class="responsive-table highlight">
+                                <thead>
+                                    <tr>
+                                        <th>نام</th>
+                                        <th>درصد</th>
+                                        <th>تعداد کل سوالات</th>
+                                        <th>جواب های درست</th>
+                                        <th>جواب های نادرست</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <!-- <tr class="nth">
+                                        <td>Alvin</td>
+                                        <td>Eclair</td>
+                                        <td>$0.87</td>
+                                        <td>$0.87</td>
+                                        <td>$0.87</td>
+                                        <td>$0.87</td>
+                                    </tr>
+                                    <tr class="nth">
+                                        <td>Alvin</td>
+                                        <td>Eclair</td>
+                                        <td>$0.87</td>
+                                        <td>$0.87</td>
+                                        <td>$0.87</td>
+                                        <td>$0.87</td>
+                                    </tr>
+                                    <tr class="nth">
+                                        <td>Alvin</td>
+                                        <td>Eclair</td>
+                                        <td>$0.87</td>
+                                        <td>$0.87</td>
+                                        <td>$0.87</td>
+                                        <td>$0.87</td>
+                                    </tr>
+                                    <tr class="nth">
+                                        <td>Alan</td>
+                                        <td>Jellybean</td>
+                                        <td>$3.76</td>
+                                        <td>$0.87</td>
+                                        <td>$0.87</td>
+                                        <td>$0.87</td>
+                                    </tr>
+                                    <tr class="nth">
+                                        <td>Jonathan</td>
+                                        <td>Lollipop</td>
+                                        <td>$7.00</td>
+                                        <td>$0.87</td>
+                                        <td>$0.87</td>
+                                        <td>$0.87</td>
+                                    </tr>
+                                    <tr class="nth">
+                                            <td>Alvin</td>
+                                            <td>Eclair</td>
+                                            <td>$0.87</td>
+                                            <td>$0.87</td>
+                                            <td>$0.87</td>
+                                            <td>$0.87</td>
+                                        </tr> -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="js/angular.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/materialize.min.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            var app = angular.module('myApp', []);
+            app.controller('myCtrl', function ($scope) {
+                $scope.names = [{
+                    Name: 'amirali',
+                    Country: 'iran'
+                }];
+            });
+
+
+        })
+    </script>
+</body>
+
+</html>
