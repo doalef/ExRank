@@ -8,16 +8,23 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="css/materialize.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
-<body>
+<body id="kolesh">
 
-    <!-- Header with title -->
 
     <head>
         <nav>
             <div class="nav-wrapper navMenu">
                 <a href="#!" class="brand-logo center">نتایج آزمون</a>
+                <ul class="right">
+                    <li>
+                        <a class="download">
+                            <i class="material-icons">file_download</i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </head>
@@ -51,9 +58,9 @@
                 </div>
                 <!-- Table Div -->
                 <div class="col m9 s12">
-                    <div class="card">
+                    <div class="card" id="contain">
                         <div class="container">
-                            <table id="myTable" class="responsive-table highlight">
+                            <table id="myTable" class="responsive-table highlight bordered">
                                 <thead>
                                     <tr>
                                         <th>نام</th>
@@ -75,11 +82,11 @@
     </article>
 
     <footer class="page-footer" style="background:transparent;position:fixed;bottom:0;left:0;width:100%;">
-            <div class="footer-copyright">
-                <div class="container center">
-                    <a class="grey-text text-lighten-4 center">دبیرستان دخترانه زینب فقیهان</a>
-                </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                <a class="grey-text text-lighten-4 center">دبیرستان دخترانه زینب فقیهان</a>
             </div>
+        </div>
     </footer>
 
 
@@ -88,7 +95,9 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="js/angular.min.js"></script>
-    <script src="https://www.w3schools.com/lib/w3.js"></script> 
+    <script src="js/FileSaver.min.js"></script>
+    <script src="js/dom-to-image.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" type="text/javascript"></script>
     <script src="js/materialize.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>

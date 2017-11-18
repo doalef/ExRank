@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     var data = [];
     $('.submit').click(function(){
         var rightAnswer = parseInt($('.correct').val());
@@ -22,8 +23,15 @@ $(document).ready(function(){
             var row = "<tr class=\"nth\"><td>" + stu.name +  "</td><td>" + stu.percent + "</td><td>" + stu.all + "</td><td>" +
             stu.right + "</td><td>" + stu.wrong;
             $('tbody').append(row);
-            w3.sortHTML('#myTable', '.nth', 'td:nth-child(2)')
+            w3.sortHTML('#myTable', '.nth', 'td:nth-child(2)');
         }
+    })
+
+    $('.download').click(function(){
+        domtoimage.toBlob(document.getElementById('contain'))
+        .then(function (blob) {
+            window.saveAs(blob, 'my-node.png');
+        });
     })
 
     function percentage(all,correct,wrong) {
